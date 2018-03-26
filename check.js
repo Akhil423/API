@@ -6,6 +6,6 @@
       document.getElementById("demo").innerHTML = this.url;
     }
   };
-  xhttp.open("GET", "", true);
+  xhttp.open("GET", "https://akhil423.github.io/API/", true);
   xhttp.send();
 })();
