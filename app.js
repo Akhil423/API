@@ -13,7 +13,15 @@ fs.readFile('data.json', 'utf8', function (err, data) {
           if (err) throw err;
           obj = JSON.parse(data);
        });
-app.get('/', (req, res) => {
+app.param('id', function(req, res, next, id) {
+
+    // check if the user with that id exists
+    // do some validations 
+	req.id = id; // getting value of id from url
+
+    next();
+});
+app.get('/id/:id/', (req, res) => {
 	
 	 
        var k=0;
