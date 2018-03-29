@@ -9,8 +9,8 @@ Validates Things
       
   `package.json`
   
-      - which helps install dependency packages for api), data.json (it contains data of registered users with our API service.
+      - which helps install dependency packages for api.
       
    `data.json`
    
-       - which contains data of registered users
+       - it contains data of registered users with our API service.
